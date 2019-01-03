@@ -8,9 +8,7 @@ pipeline {
                 
                 // Change to the project dir
                 dir('/Users/imaki/vagrant-projects/testvm') {
-                    
-                    // Start freestyle job that create VM using vagrant plugin
-                    build 'test1_up'
+                    sh 'vagrant up'
                 }    
             }
         }
