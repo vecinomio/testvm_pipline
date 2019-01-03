@@ -27,7 +27,7 @@ Vagrant.configure(2) do |config|
     vb.customize ["modifyvm", :id, "--vram", "128"]
   end
 
-  config.vm.network "forwarded_port", guest: 3000, host: 3000
+  #config.vm.network "forwarded_port", guest: 3000, host: 3000
  
   # Install the latest version of Chef.
   # For more information see https://github.com/chef/vagrant-omnibus
